@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Itungin.com - Bantu kamu ngitung-ngitung.</title>
+    
+    <link rel="stylesheet" href="css/form.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap" rel="stylesheet">
+    
+    <script src="js/form.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <div class="header">
+        <h1>itungin.com</h1>
+        <p class="subtitle">Bantu kamu ngitung-ngitung</p>
+    </div>
+    
+    <div class="flex-wrap">
+
+            
+        <div class="form-wrap">
+            <div class="column-wrap">
+                <div class="thumb-column">
+                    <img src="images/square.jpg" alt="">
+                </div>
+                <div class="box-form">
+                    <h2>Form Perhitungan Persegi</h2>
+                    <p>Rumus:<br>Panjang x Lebar</p>
+                    <form action="">
+                        <input class="inline" id="sisi1" type="number" name="sisi1" placeholder="   Sisi A"> <!--Sisi 1-->
+                        <span>X</span>
+                        <input class="inline" id="sisi2" type="number" name="sisi2" placeholder="   Sisi B"><br> <!--Sisi 2-->
+                        <input class="btn" type="button" value="Hitung" onclick="luasPersegi();"><br>
+                        <input class="hasil" type="text" id="hasil" name="hasil"  placeholder="Hasil">
+                    </form>
+                </div>
+            </div>
+        
+            
+            <div class="column-wrap">
+                <div class="thumb-column">
+                    <img src="images/rectangle.jpg" alt="">
+                </div>
+                <div class="box-form">
+                    <h2>Form Perhitungan Persegi Panjang</h2>
+                    <p>Rumus:<br>Panjang x Lebar</p>
+                    <form action="">
+                        <input class="inline" id="panjang" type="number" placeholder="   Panjang">
+                        <span>X</span>
+                        <input class="inline" id="lebar" type="number" placeholder="   Lebar"><br>
+                        <input class="btn" type="button" value="Hitung" onclick="luasSegiPanjang();"><br>
+                        <input class="hasil" id="hasil-segipanjang" type="text" placeholder="Hasil">
+                    </form>
+                </div>
+            </div>
+            
+            <div class="column-wrap">
+                <div class="thumb-column">
+                    <img src="images/square.jpg" alt="">
+                </div>
+                <div class="box-form">
+                    <h2>Form Perhitungan Segitiga</h2>
+                    <p>Rumus:<br>Panjang x Lebar</p>
+                    <form class="form-segitiga" action="">
+                        <input class="inline in-khusus" id="alas" type="number" placeholder="    Alas">
+                        <span>X</span>
+                        <input class="inline in-khusus" id="tinggi" type="number" placeholder="   Tinggi">
+                        <hr><span>2</span><br><br>
+                        <input class="btn" type="button" value="Hitung" onclick="luasSegitiga();"><br>
+                        <input class="hasil" id="hasil-segitiga" type="text" placeholder="Hasil">
+                    </form>
+                </div>      
+            </div>
+            
+            <div class="column-wrap">
+                <div class="thumb-column">
+                    <img src="images/circle.jpg" alt="">
+                </div>    
+                <div class="box-form">
+                    <h2>Form Perhitungan Lingkaran</h2>
+                    <p>Rumus:<br>Panjang x Lebar</p>
+                    <form action="">
+                        <span>3.14 X</span>
+                        <input class="inline" id="jari1" type="number" placeholder="   r"><sup> 2</sup><br>
+                        <input class="btn" type="button" value="Hitung" onclick="luasLingkaran();"><br>
+                        <input class="hasil" id="hasil-lingkaran" type="text" placeholder="Hasil">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Created by Ardyan Satya
+        </div>     
+    </div>
+   
+</body>
+</html>

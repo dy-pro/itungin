@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    animation-name: bgblink;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+    
+}
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: aliceblue;
+    font-family: 'Gochi Hand', cursive;
+    font-size: xx-large;
+    animation-name: bgblink;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bgblink {
+    0% {background-color: aliceblue;}
+    25% {background-color: rgb(149, 177, 214);}
+    50% {background-color: rgb(200, 161, 218);}
+    75% {background-color: rgb(224, 162, 204);}
+    100% {background-color: aliceblue;}
+}
+
+@keyframes bgblink {
+    0% {background-color: aliceblue;}
+    25% {background-color: rgb(149, 177, 214);}
+    50% {background-color: rgb(200, 161, 218);}
+    75% {background-color: rgb(224, 162, 204);}
+    100% {background-color: aliceblue;}
+}
+
+.flex-wrap {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: auto 10px;
+    padding: 5px 5px 0 5px;
+    border-radius: 20px 20px 0 0;
+    background-color: white;
+    box-shadow: 0 -5px 3px rgba(0,0,0,0.12), 1px 0 2px rgba(0,0,0,0.24);
+}
+
+.form-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.column-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.box-form {
+    text-align: center;
+    width: 250px;
+    margin: 10px;
+    height: 400px;
+    border-radius: 20px;
+    padding: 25px;
+    background-color: cornflowerblue;
+    box-shadow: 0 5px 3px rgba(31, 23, 23, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+}
+
+.inline {
+    width: 100px;
+    height: 30px;
+    margin: 35px auto 20px auto;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.2, 1.2);
+}
+
+img {
+    width: 150px;
+    text-align: center;
+    
+}
+
+span {
+    font-weight: 600;
+    color: white;
+}
+
+p, sup {
+    color: aliceblue;
+}
+
+.hasil {
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    border-top-style: none;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(21, 90, 99);
+}
+
+.footer {
+    color: white;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: 35px auto 0 auto;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(21, 90, 99);
+}
+
+hr {
+    border: white 1px solid;
+    margin: 0 auto;
+}
+
+.in-khusus {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    margin-top: 0;
+    color: teal;
+    font-size: 18px;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+/**** RESPONSIVE WEB ******/
+
+@media only screen and (max-width: 680px) {
+    .form-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column-wrap {
+        margin-bottom: 5rem;
+        width: 75%;
+        max-width: 350px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .form-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+    
